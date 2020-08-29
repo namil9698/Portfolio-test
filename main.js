@@ -64,12 +64,10 @@ document.addEventListener('scroll', ()=> {
 });
 
 
-// Handdle click on the "arrow up" button
-arrowUp.addEventListener('click',()=>{
-    scrollIntoView('#navbar')
-
-})
-
+// Handle click on the "arrow up" button
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+  });
 
 //
 const workBtnContainer = document.querySelector('.work__categories');
@@ -112,6 +110,7 @@ const projects = document.querySelectorAll('.project');
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
+    console.log(scrollTo);
     scrollTo.scrollIntoView({behavior: 'smooth'});
     
 }
